@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-pkware", "csharp-pkware\csharp-pkware.csproj", "{0567E6C2-B1D8-4A16-AC35-5D15CA0A7607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-pkware-cli", "csharp-pkware-cli\csharp-pkware-cli.csproj", "{2355B0C9-F1B0-4E33-9D52-14B1DC5DA572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0567E6C2-B1D8-4A16-AC35-5D15CA0A7607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0567E6C2-B1D8-4A16-AC35-5D15CA0A7607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0567E6C2-B1D8-4A16-AC35-5D15CA0A7607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0567E6C2-B1D8-4A16-AC35-5D15CA0A7607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2355B0C9-F1B0-4E33-9D52-14B1DC5DA572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2355B0C9-F1B0-4E33-9D52-14B1DC5DA572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2355B0C9-F1B0-4E33-9D52-14B1DC5DA572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2355B0C9-F1B0-4E33-9D52-14B1DC5DA572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A60F5147-191B-4D37-9CA3-4870B4B3D751}
+	EndGlobalSection
+EndGlobal
