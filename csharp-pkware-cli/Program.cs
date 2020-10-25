@@ -16,7 +16,6 @@ namespace csharp_pkware_cli
 			{
 				if (arg.StartsWith("-"))
 				{
-					// hello, I'm just testing out stuff here
 					string cmd = arg.Substring(1).ToLower();
 					if (cmd.Equals("explode"))
 					{
