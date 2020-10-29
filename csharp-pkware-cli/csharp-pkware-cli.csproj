@@ -48,6 +48,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="test-files\binary" />
+    <None Include="test-files\binary.unpacked" />
+    <None Include="test-files\fast.fts" />
+    <None Include="test-files\fast.fts.unpacked" />
+    <None Include="test-files\large" />
+    <None Include="test-files\large.ascii" />
+    <None Include="test-files\large.unpacked" />
+    <None Include="test-files\level8.dlf" />
+    <None Include="test-files\level8.dlf.unpacked" />
+    <None Include="test-files\level8.llf" />
+    <None Include="test-files\level8.llf.unpacked" />
+    <None Include="test-files\medium" />
+    <None Include="test-files\medium.unpacked" />
+    <None Include="test-files\small" />
+    <None Include="test-files\small.unpacked" />
+    <None Include="test-files\very-tiny.unpacked" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\csharp-pkware\csharp-pkware.csproj">

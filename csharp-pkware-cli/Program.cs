@@ -6,8 +6,28 @@ namespace csharp_pkware_cli
 {
 	class Program
 	{
-		static void Main(string[] args)
+		private static string GetProjectDirectory()
 		{
+			return Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+		}
+		public static void Main(string[] args)
+		{
+			string filePath = Path.Combine(GetProjectDirectory(), @"test-files\small.unpacked");
+
+			const int ChunkSize = 0x1000;
+			using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+			{
+				int bytesRead;
+				var buffer = new byte[ChunkSize];
+				while ((bytesRead = fs.Read(buffer, 0, buffer.Length)) > 0)
+				{
+					Console.WriteLine($"read in {bytesRead} bytes");
+				}
+			}
+
+			Console.ReadLine();
+
+			/*
 			bool explode = false;
 			bool implode = false;
 			List<string> inputFiles = new List<string>();
@@ -79,6 +99,7 @@ namespace csharp_pkware_cli
 					}
 				}
 			}
+			*/
 		}
 	}
 }

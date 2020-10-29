@@ -6,7 +6,6 @@ namespace csharp_pkware
     {
 		public static byte[] Implode(byte[] bytes)
 		{
-			//TODO: implode bytes and return byte[] of imploded bytes
 			throw new NotImplementedException();
 		}
 
