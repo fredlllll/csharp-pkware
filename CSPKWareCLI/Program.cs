@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace csharp_pkware_cli
+namespace CSPKWareCLI
 {
 	class Program
 	{

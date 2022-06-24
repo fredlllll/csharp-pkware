@@ -2,11 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>csharp_pkware</RootNamespace>
+    <RootNamespace>CSPKWare</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Implode\" />
-  </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 using System;
 
-namespace csharp_pkware
+namespace CSPKWare
 {
     public static class PKWare
     {

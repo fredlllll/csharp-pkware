@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace csharp_pkware.errors
+namespace CSPKWare.Exceptions
 {
     class InvalidCompressionType : Exception
     {

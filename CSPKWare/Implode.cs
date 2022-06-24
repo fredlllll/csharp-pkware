@@ -1,7 +1,7 @@
-﻿using csharp_pkware.errors;
+﻿using CSPKWare.Exceptions;
 using System.IO;
 
-namespace csharp_pkware
+namespace CSPKWare
 {
     class Implode
     {
@@ -22,15 +22,15 @@ namespace csharp_pkware
             {
                 case (uint)DictionarySize.Large:
                     this.dictionarySizeBits = 6;
-                    this.dictionarySizeMask = Binary.nBitsOfOnes(6);
+                    this.dictionarySizeMask = (byte)Binary.nBitsOfOnes(6);
                     break;
                 case (uint)DictionarySize.Medium:
                     this.dictionarySizeBits = 5;
-                    this.dictionarySizeMask = Binary.nBitsOfOnes(5);
+                    this.dictionarySizeMask = (byte)Binary.nBitsOfOnes(5);
                     break;
                 case (uint)DictionarySize.Small:
                     this.dictionarySizeBits = 4;
-                    this.dictionarySizeMask = Binary.nBitsOfOnes(4);
+                    this.dictionarySizeMask = (byte)Binary.nBitsOfOnes(4);
                     break;
                 default:
                     throw new InvalidDictionarySize(dictionarySize);

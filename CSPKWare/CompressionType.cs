@@ -1,4 +1,4 @@
-﻿namespace csharp_pkware
+﻿namespace CSPKWare
 {
     public enum CompressionType : ushort
     {
