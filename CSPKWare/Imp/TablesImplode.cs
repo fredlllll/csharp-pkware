@@ -1,4 +1,4 @@
-﻿namespace CSPKWare
+﻿namespace CSPKWare.Imp
 {
     public static class TablesImplode
     {

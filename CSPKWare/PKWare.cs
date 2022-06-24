@@ -11,7 +11,7 @@ namespace CSPKWare
 
 		public static byte[] Explode(byte[] bytes)
 		{
-			return CSPKWare.Explode.DoExplode(bytes);
+			return CSPKWare.Exp.Explode.DoExplode(bytes);
 		}
     }
 }

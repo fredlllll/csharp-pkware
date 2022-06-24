@@ -1,7 +1,7 @@
 ﻿using CSPKWare.Exceptions;
 using System.IO;
 
-namespace CSPKWare
+namespace CSPKWare.Imp
 {
     class Implode
     {
