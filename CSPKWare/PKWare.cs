@@ -11,8 +11,7 @@ namespace CSPKWare
 
 		public static byte[] Explode(byte[] bytes)
 		{
-			//TODO: explode bytes and return byte[] of exploded bytes
-			throw new NotImplementedException();
+			return CSPKWare.Explode.DoExplode(bytes);
 		}
     }
 }
