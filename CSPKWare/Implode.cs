@@ -49,8 +49,8 @@ namespace CSPKWare
                 case (uint)CompressionType.Ascii:
                     for (nCount = 0; nCount <= 0xff; nCount++)
                     {
-                        this.nChBits[nCount] = (byte)(Tables.ChBitsAsc[nCount] + 1);
-                        this.nChCodes[nCount] = (byte)(Tables.ChCodeAsc[nCount] * 2);
+                        this.nChBits[nCount] = (byte)(TablesImplode.ChBitsAsc[nCount] + 1);
+                        this.nChCodes[nCount] = (byte)(TablesImplode.ChCodeAsc[nCount] * 2);
                     }
                     break;
                 default:
@@ -60,10 +60,10 @@ namespace CSPKWare
             nCount = 0x100;
             for (int i = 0; i < 0x10; i++)
             {
-                for (int nCount2 = 0; nCount2 < 1 << Tables.ExLenBits[i]; nCount2++)
+                for (int nCount2 = 0; nCount2 < 1 << TablesImplode.ExLenBits[i]; nCount2++)
                 {
-                    this.nChBits[nCount] = (byte)(Tables.ExLenBits[i] + Tables.LenBits[i] + 1);
-                    this.nChCodes[nCount] = (byte)(nCount2 << (Tables.LenBits[i] + 1) | (Tables.LenCode[i] * 2) | 1);
+                    this.nChBits[nCount] = (byte)(TablesImplode.ExLenBits[i] + TablesImplode.LenBits[i] + 1);
+                    this.nChCodes[nCount] = (byte)(nCount2 << (TablesImplode.LenBits[i] + 1) | (TablesImplode.LenCode[i] * 2) | 1);
                     nCount++;
                 }
             }
